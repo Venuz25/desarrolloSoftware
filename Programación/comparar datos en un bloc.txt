@@ -1,0 +1,35 @@
+
+package clase2;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+public class Clase2 {
+    public static void main(String[] args) {
+        try {
+            File f = new File("datos.txt");
+            Scanner scan = new Scanner(f);
+             int mayor = 0 , numero = 0;
+            while(scan.hasNext()){
+                       
+                numero = scan.nextInt();
+                if (numero>mayor){
+                        mayor = numero;
+                }
+            }
+                System.out.println(mayor);
+            
+                
+            scan.close();
+        } catch (FileNotFoundException ex) {
+            Logger.getLogger(Clase2.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    
+                
+                }
+    }
+    
+

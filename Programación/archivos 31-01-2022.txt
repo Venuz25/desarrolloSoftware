@@ -1,0 +1,28 @@
+package archivos;
+
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.PrintWriter;
+import java.util.Scanner;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+public class Archivos {
+  
+    public static void main(String[] args) {
+
+        try {
+            System.out.println("dame tu nombre");
+            Scanner scan=new Scanner(System.in);
+            String nombre = scan.nextLine();
+            
+            FileOutputStream fo=new FileOutputStream("Archivos.txt",true);
+                    PrintWriter pw=new PrintWriter(fo,true);
+                    pw.println("H;programmers");
+                     pw.println("eres: "+nombre);
+                    pw.close();        
+                    } catch (FileNotFoundException ex) {
+            Logger.getLogger(Archivos.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+}

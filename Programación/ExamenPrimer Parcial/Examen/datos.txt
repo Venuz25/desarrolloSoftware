@@ -1,0 +1,4 @@
+dolares 2 42
+yenes 5 10
+dolares 10 210
+dolares 5 105

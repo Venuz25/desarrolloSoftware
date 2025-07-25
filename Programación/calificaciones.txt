@@ -1,0 +1,4 @@
+Luis	 8	 9	 5
+Carlos	 7 	4	 10
+Juan 	6	 5	 9
+Pedro	 3	4	 0 
